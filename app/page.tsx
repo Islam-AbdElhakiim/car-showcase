@@ -39,7 +39,7 @@ export default async function Home({searchParams}: HomeProps) {
             </section>
           ) : (
             <div className="home__error-container">
-              <h2 className="text-black text-xl font-bold">Oops, the integrated API can't provide data for this car data...</h2>
+              <h2 className="text-black text-xl font-bold">Oops, the integrated API can&apos;t provide data for this car data...</h2>
               <p>{allCars?.message}</p>
             </div>
           )}

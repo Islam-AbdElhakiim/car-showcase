@@ -7,7 +7,6 @@ import { ShowMoreComponent } from "@/types";
 const ShowMore = ({pageNumber,loadMore}: ShowMoreComponent) => {
   let router = useRouter();
   let searchParams = useSearchParams();
-  console.log(searchParams )
   const [loader, setLoader] = useState(false);
   
   useEffect(() => {
@@ -23,7 +22,7 @@ const ShowMore = ({pageNumber,loadMore}: ShowMoreComponent) => {
   return (
     <div className="flex-center flex-col mt-10">
       {loader && (
-        <div className="z-20 flex-center bg-white fixd=ed inset-0">
+        <div className="z-20 flex-center bg-white">
           <div className="lds-ring">
             <div></div>
             <div></div>
